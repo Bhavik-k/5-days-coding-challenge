@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jdenticon@3.1.0/dist/jdenticon.min.js" async integrity="sha384-VngWWnG9GS4jDgsGEUNaoRQtfBGiIKZTiXwm9KpgAeaRn6Y/1tAFiyXqSzqC8Ga/"crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel = "icon" href = "./img/amazon_PNG27.png" type = "image/x-icon">
+    <!-- <link href="/tailwind.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/tailwindcss@2.2.4/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        .table-heading{
+            padding: 8px 0 8px 0 ;
+            margin-bottom: 20px;
+            border-bottom: solid 1px rgba(0, 0, 0, 0.185);
+            border-top: solid 1px rgba(0, 0, 0, 0.185);
+        }
+        .item-block{
+            padding-top:    5px;
+            padding-bottom: 5px;
+            border-bottom: solid 1px rgba(0, 0, 0, 0.185);
+
+        }
+    </style>
+
+    <title>My Cart</title>
+</head>
+<body>
+    <div class="bg-white w-full">
+        <div class="header
+         h-16 bg-gray-900 flex items-center">
+
+            <div class="logo w-1/5 h-16 ml-10">
+                <img class="w-30 h-16 pt-1.5 object-contained" src="./img/Amazon logo.png" alt="">
+            </div>
+            <div class="search flex">
+                
+                <input type="text" id="serach" placeholder="Search..."
+                class="h-9 w-30 px-3 text-white bg-gray-800 border border-gray-500 rounded-l-xl outline-none placeholder-white">
+                <div class="catogries h-9 w-30 px-3 bg-gray-800 border border-gray-500 flex text-white items-center">
+                    All Catogries
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </div>
+                <div class="searchicon bg bg-yellow-500 h-9 w-10 rounded-r-xl flex justify-center items-center text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="righticon text-white flex ml-auto items-center">
+                <svg class="h4 w-4 justify-around mr-2 " xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                  <div class="justify-around mr-2 cart bg-yellow-500 flex place-items-center justify-center h-10 w-10 rounded-xl">
+                    <svg class="h4 w-4 " xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg>
+                  </div>
+                  <svg class="h4 w-4 justify-around mr-2 " xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                  </svg>
+                  <!-- <svg class="h-10 rounded-full bg-white mr-1" data-jdenticon-value="fr. Mathew Karickal"></svg> -->
+                  <!-- <svg class="h-10 rounded-full bg-white mr-1" data-jdenticon-value="b"></svg> -->
+                  <svg class="h-10 rounded-full bg-white mr-1" data-jdenticon-value="Depali "></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 p1 border-blue-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+            </div>
+        </div>
+        <div class="main h-screen flex">
+            <div class="main-sidebar border-t-2 boder-gray-700 w-1/5 bg-gray-900">
+                <div class="sidebar-categories p-6 font-bold">
+                    <div class="sidebar-main-categories text-yellow-500 cursor-pointer flex bg-gray-700 rounded-lg p-2">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" /></svg>
+                        </span>
+                        <span>categories</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-main-categorie text-white cursor-pointer flex mb-2">
+                    <span class="w-2"></span>
+                    <span class="p-2 rounded-lg hover:bg-gray-700">Echo and Alexa</span>
+                </div>
+                <div class="sidebar-main-categorie text-white cursor-pointer flex mb-2">
+                    <span class="w-2"></span>
+                    <span class="p-2 rounded-lg hover:bg-gray-700">Fire TV</span>
+                </div>
+                <div class="sidebar-main-categorie text-white cursor-pointer flex mb-2">
+                    <span class="w-2"></span>
+                    <span class="p-2 rounded-lg hover:bg-gray-700">Kindle eBooks</span>
+                </div>
+                <div class="sidebar-main-categorie text-white cursor-pointer flex mb-2">
+                    <span class="w-2"></span>
+                    <span class="p-2 rounded-lg hover:bg-gray-700">Audible Audiobooks</span>
+                </div>
+                <div class="sidebar-main-categorie text-white cursor-pointer flex mb-2">
+                    <span class="w-2"></span>
+                    <span class="p-2 rounded-lg hover:bg-gray-700">Amazom Prime Video</span>
+                </div>
+                <div class="sidebar-main-categorie text-white cursor-pointer flex mb-2 m-auto">
+                    <span class="w-2"></span>
+                    <span class="p-2 rounded-lg hover:bg-gray-700"><i class="fas fa-percentage"></i> Sell</span>
+                </div>
+                <div class="sidebar-main-categorie text-white cursor-pointer flex mb-2">
+                    <span class="w-2"></span>
+                    <span class="p-2 rounded-lg hover:bg-gray-700"><i class="far fa-question-circle"></i> Help</span>
+                </div>
+            </div>
+
+
+            <div class="mainsection flex-1 bg-gray-200 p-6 w-4/5" style="background-color: #f1f2f5;">
+                <h1 class="font-bold my-4 text-gray-700 text-2xl flex">Shopping Cart 
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </h1>
+                <div class="table-heading flex">
+                    <h3 class="flex-grow">Item</h3>
+                    <h3 class="w-28">Count</h3>
+                    <h3 class="w-32">Price</h3>
+                </div>
+                <!-- <div class="idemBox">
+                    <div class="item">
+                        <div class="image">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="item-full-div">
+
+                    <div class="item-block flex ">
+                        <div class="item flex-grow flex">
+                            <div class="image w-36">
+                                <img class="rounded-2xl" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS7PP0zcOyRx_dyTySUEXlMGzwcsr0xuv3W9eJh910EiKM_oxCznLipH_jBzzB40U0Mu4-47F16otlehVUwkKyYYBJ0CfzA1JBwL_hZdzr2&usqp=CAE" alt="">
+                            </div>
+                            <div class="item-info ml-3">
+                                <h1 class="text-xl">Nintendo  Switch (2019)</h1>
+                                <div class="product-make text-green-700 font-bold">
+                                    Nintendo
+                                </div>
+                                <div class="product-rating text-yellow-500 font-bold"><span class="emoji-container">
+                                    <span class="emoji-outer emoji-sizer" style="width: 15px; height: 15px;"><span class="emoji-inner" style="background: url(chrome-extension://negakbijaemdgbhklopmghphgaeadmpo/data/images/emoji/emoji-data/sheet_emojione_64.png);background-position:6.382978723404255% 93.61702127659575%;background-size:4800%">⭐</span></span><span class="emoji-outer emoji-sizer" style="width: 15px; height: 15px;"><span class="emoji-inner" style="background: url(chrome-extension://negakbijaemdgbhklopmghphgaeadmpo/data/images/emoji/emoji-data/sheet_emojione_64.png);background-position:6.382978723404255% 93.61702127659575%;background-size:4800%">⭐</span></span><span class="emoji-outer emoji-sizer" style="width: 15px; height: 15px;"><span class="emoji-inner" style="background: url(chrome-extension://negakbijaemdgbhklopmghphgaeadmpo/data/images/emoji/emoji-data/sheet_emojione_64.png);background-position:6.382978723404255% 93.61702127659575%;background-size:4800%">⭐</span></span><span class="emoji-outer emoji-sizer" style="width: 15px; height: 15px;"><span class="emoji-inner" style="background: url(chrome-extension://negakbijaemdgbhklopmghphgaeadmpo/data/images/emoji/emoji-data/sheet_emojione_64.png);background-position:6.382978723404255% 93.61702127659575%;background-size:4800%">⭐</span></span> 3.5
+                                </span></div>
+                            </div>
+    
+                        </div>
+                        <div class="numbe5rrIncrease-decrease flex w-25 h-3 flex items-center justify-center mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class=" m-2 h-9 w-9 p-2 bg-gray-200 cursor-pointer rounded hover:bg-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                              </svg>
+                              1
+                              <svg xmlns="http://www.w3.org/2000/svg" class=" m-2 h-9 w-9 p-2 bg-gray-200 cursor-pointer rounded hover:bg-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                              </svg>
+                        </div>
+                        <div class="price w-30 product-price font-bold text-gray-700 mx-1 font-lg text-3xl flex justify-center">
+                            <h1>$450
+                            </h1>
+                        </div>
+                        <div class="X-Button w-20 flex justify-center text-gray-500 hover:text-black ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                        </div>
+                    </div>
+                    <div class="item-block flex ">
+                        <div class="item flex-grow flex">
+                            <div class="image w-36 h-36 bg-white rounded-2xl flex items-center justify-center">
+                                <img class="rounded-2xl" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT1nIJow30h5D8J4275fV4LZffOXqVuHEFpRv9O_5Rjvj38E6BQg5TqU-BepsrrTiLbcvpqa9cWDyqj8VfhL5hF74FRLOh8C-F3wXd1mgTw1KUi-4DFEJWZ&usqp=CAE" alt="">
+                            </div>
+                            <div class="item-info ml-3">
+                                <h1 class="text-xl">49" Gaming Curved Monitor</h1>
+                                <div class="product-make text-green-700 font-bold">
+                                    Samsung
+                                </div>
+                                <div class="product-rating text-yellow-500 font-bold"><span class="emoji-container">
+                                    </span><span class="emoji-outer emoji-sizer" style="width: 15px; height: 15px;"><span class="emoji-inner" style="background: url(chrome-extension://negakbijaemdgbhklopmghphgaeadmpo/data/images/emoji/emoji-data/sheet_emojione_64.png);background-position:6.382978723404255% 93.61702127659575%;background-size:4800%">⭐</span></span><span class="emoji-outer emoji-sizer" style="width: 15px; height: 15px;"><span class="emoji-inner" style="background: url(chrome-extension://negakbijaemdgbhklopmghphgaeadmpo/data/images/emoji/emoji-data/sheet_emojione_64.png);background-position:6.382978723404255% 93.61702127659575%;background-size:4800%">⭐</span></span><span class="emoji-outer emoji-sizer" style="width: 15px; height: 15px;"><span class="emoji-inner" style="background: url(chrome-extension://negakbijaemdgbhklopmghphgaeadmpo/data/images/emoji/emoji-data/sheet_emojione_64.png);background-position:6.382978723404255% 93.61702127659575%;background-size:4800%">⭐</span></span> 3
+                                </span></div>
+                            </div>
+    
+                        </div>
+                        <div class="numbe5rrIncrease-decrease flex w-25 h-3 flex items-center justify-center mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class=" m-2 h-9 w-9 p-2 bg-gray-200 cursor-pointer rounded hover:bg-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                              </svg>
+                              1
+                              <svg xmlns="http://www.w3.org/2000/svg" class=" m-2 h-9 w-9 p-2 bg-gray-200 cursor-pointer rounded hover:bg-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                              </svg>
+                        </div>
+                        <div class="price w-30 product-price font-bold text-gray-700 mx-1 font-lg text-3xl flex justify-center">
+                            <h1>
+                                $1331.7
+                            </h1>
+                        </div>
+                        <div class="X-Button w-20 flex justify-center text-gray-500 hover:text-black ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                        </div>
+                    </div>
+                    <div class="item-block flex ">
+                        <div class="item flex-grow flex">
+                            <div class="image w-36 h-36 bg-white rounded-2xl flex items-center justify-center">
+                                <img class="rounded-2xl" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSKUgBV34DGfaNKHB4NnL2PzsuD1fSCZ9rCtUMIXQ_NExWDm0ZQ0klzKlWcONUvRySMcuNMswDdEJ_V2MmHtCFJFevsm8PaKZ5S9xJ1lkpuuOb0eukdlOm8Xg&usqp=CAE" alt="">
+                            </div>
+                            <div class="item-info ml-3">
+                                <h1 class="text-xl">Corsair K55 RGB Backlit</h1>
+                                <div class="product-make text-green-700 font-bold">
+                                    Corsair K55 RGB Backlit
+                                </div>
+                                <div class="product-rating text-yellow-500 font-bold"><span class="emoji-container">
+                                    <span class="emoji-outer emoji-sizer" style="width: 15px; height: 15px;"><span class="emoji-inner" style="background: url(chrome-extension://negakbijaemdgbhklopmghphgaeadmpo/data/images/emoji/emoji-data/sheet_emojione_64.png);background-position:6.382978723404255% 93.61702127659575%;background-size:4800%">⭐</span></span><span class="emoji-outer emoji-sizer" style="width: 15px; height: 15px;"><span class="emoji-inner" style="background: url(chrome-extension://negakbijaemdgbhklopmghphgaeadmpo/data/images/emoji/emoji-data/sheet_emojione_64.png);background-position:6.382978723404255% 93.61702127659575%;background-size:4800%">⭐</span></span><span class="emoji-outer emoji-sizer" style="width: 15px; height: 15px;"><span class="emoji-inner" style="background: url(chrome-extension://negakbijaemdgbhklopmghphgaeadmpo/data/images/emoji/emoji-data/sheet_emojione_64.png);background-position:6.382978723404255% 93.61702127659575%;background-size:4800%">⭐</span></span><span class="emoji-outer emoji-sizer" style="width: 15px; height: 15px;"><span class="emoji-inner" style="background: url(chrome-extension://negakbijaemdgbhklopmghphgaeadmpo/data/images/emoji/emoji-data/sheet_emojione_64.png);background-position:6.382978723404255% 93.61702127659575%;background-size:4800%">⭐</span></span> 3.5
+                                </span></div>
+                            </div>
+    
+                        </div>
+                        <div class="numbe5rrIncrease-decrease flex w-25 h-3 flex items-center justify-center mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class=" m-2 h-9 w-9 p-2 bg-gray-200 cursor-pointer rounded hover:bg-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                              </svg>
+                              1
+                              <svg xmlns="http://www.w3.org/2000/svg" class=" m-2 h-9 w-9 p-2 bg-gray-200 cursor-pointer rounded hover:bg-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                              </svg>
+                        </div>
+                        <div class="price w-30 product-price font-bold text-gray-700 mx-1 font-lg text-3xl flex justify-center">
+                            <h1>$53
+                            </h1>
+                        </div>
+                        <div class="X-Button w-20 flex justify-center text-gray-500 hover:text-black ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="finall flex">
+                    <div class="flex-grow"></div>
+                    <div class="Total">
+                        <h1 class="text-1xl">Total</h1>
+                        <h1 class="text-4xl">$ 1834.7</h1>
+                    </div>
+                    <div class="Buybutton
+                    bg-yellow-500
+                    m-3
+                    p-5
+                    rounded-2xl
+                    text-2xl
+                    font-bold
+                    text-white
+                    shadow-lg
+                    hover:shadow-2xl
+                    cursor-pointer
+                    ">Proceed To Buy</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
